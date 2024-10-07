@@ -63,7 +63,7 @@ Speed up, slow down, wheelie, or tow! Each vehicle has specific actions availabl
 
 ## 🎥 Video
 
-* This [link](https://www.insertvideolinkhere.com) will take you to [YouTube](https://www.insertvideolinkhere.com) to view the [video walkthrough](https://www.insertvideolinkhere.com) of this application. 
+* This [link](https://youtu.be/oPSw4Ta3lBQ) will take you to [YouTube](https://youtu.be/oPSw4Ta3lBQ) to view the [video walkthrough](https://youtu.be/oPSw4Ta3lBQ) of this application. 
 
 
 
