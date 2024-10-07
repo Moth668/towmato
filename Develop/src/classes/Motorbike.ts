@@ -44,6 +44,7 @@ constructor(
   this.year = year;
   this.weight = weight;
   this.topSpeed = topSpeed;
+  this.wheels = wheels
 
       // TODO: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
 
@@ -54,18 +55,15 @@ constructor(
   }
 }
 
+
 // TODO: Override the printDetails method from the Vehicle class
   // TODO: The method should call the printDetails method of the parent class
 override printDetails(): void {
 
   super.printDetails();
-  // TODO: Implement the wheelie method
-    // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
-console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
   
   // TODO: The method should log the details of the Motorbike
     // TODO: The details should include the VIN, make, model, year, weight, top speed, color, and wheels
-
   console.log(`VIN: ${this.vin}`);
   console.log(`Color: ${this.color}`);
   console.log(`Make: ${this.make}`);
@@ -75,7 +73,19 @@ console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
   console.log(`Top Speed: ${this.topSpeed} mph`);
   console.log(`Wheels: ${this.wheels}`)
 }
+
+ // TODO: Implement the wheelie method
+    // Method to perform a wheelie (Motorbike only)
+    wheelie(): void {
+      if (this.started) {
+    // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
+    console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
+      } else {
+        console.log('Start the vehicle first');
+      }
+    }
 }
+
 
 // Export the Motorbike class as the default export
 export default Motorbike;
