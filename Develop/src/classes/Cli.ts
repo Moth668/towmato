@@ -237,7 +237,7 @@ class Cli {
         {
           type: 'input',
           name: 'frontWheelBrand',
-          message: 'Enter Front Wheel Brand',
+          message: 'Enter Front Tire Brand',
         },
         {
           type: 'input',
@@ -247,7 +247,7 @@ class Cli {
         {
           type: 'input',
           name: 'rearWheelBrand',
-          message: 'Enter Rear Wheel Brand',
+          message: 'Enter Rear Tire Brand',
         },
       ])
 
@@ -306,7 +306,6 @@ class Cli {
       });
   }
 
-  // method to perform actions on a vehicle
   // method to perform actions on a vehicle
   performActions(): void {
     inquirer
@@ -370,6 +369,7 @@ class Cli {
           case 'Tow':
             if (selectedVehicle instanceof Truck) {
               this.chooseVehicleToTow(selectedVehicle);
+              return;
             } else {
               console.log('Only trucks can tow other vehicles.');
             }
